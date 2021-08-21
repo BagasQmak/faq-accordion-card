@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: "Kumbh Sans", sans-serif !important;
+    font-size: 12px !important;
+    background: linear-gradient(hsl(273, 75%, 66%) 0%, hsl(240, 73%, 65%) 50%);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.kartu {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 20px 20px 2px rgba(0, 0, 0, .3);
+}
+
+.baris  {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    position: relative;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.bg-img {
+    position: absolute;
+    transform: translateX(-412px) translateY(-250px);
+    width: 50rem;
+}
+
+
+.box-img {
+    position: absolute;
+    left: -93px;
+    top: 185px;
+    z-index: 9999;
+    transition: .3s;
+}
+
+.hero-img {
+    transform: translateX(-82px);
+}
+
+.faq {
+    width: 18rem;
+    padding: 0;
+    margin: 0;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq h5 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 20px 0;
+    color: hsl(237, 12%, 33%);
+    display: inline-block;
+}
+
+.faq .faq-element {
+    cursor: pointer;
+}
+
+.faq-element .question-paragraph {
+    text-decoration: none;
+    color: hsl(237, 12%, 33%);
+}
+
+.faq-element:hover .question-paragraph {
+    color: hsl(237, 12%, 33%);
+}
+
+.active {
+    font-weight: 700;
+    margin-bottom: 7px;
+    transition: .2s;
+}
+
+.faq-element span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-paragraph {
+    display: inline-block;
+    margin-right: 3rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    transition: .3s;
+}
+
+.question img {
+    transition: .3s;
+}
+
+.faq-element .answer {
+    font-size: 12px;
+    color: hsl(237, 12%, 33%);
+    display: none;
+}
+
+
+
+
+.faq-element hr {
+    border: 1.4px solid #bbb;
+
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+.rotate {
+    animation: rotate .3s forwards;
+}
+
+@keyframes rotateReverse {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotateReverse {
+    animation: rotateReverse .3s forwards;
+}
